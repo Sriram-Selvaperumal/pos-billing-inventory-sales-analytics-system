@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Instabill</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Dexie.js for IndexedDB -->
+    <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+    <!-- Chart.js for Reports -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <aside id="sidebar">
+            <div class="logo">Stark Instabill</div>
+            <nav>
+                <a href="#" data-page="dashboard" class="active"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+                <a href="#" data-page="pos"><i data-lucide="shopping-cart"></i> POS</a>
+                <a href="#" data-page="items"><i data-lucide="package"></i> Items</a>
+                <a href="#" data-page="reports"><i data-lucide="bar-chart-3"></i> Reports</a>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+            <header>
+                <h1 id="page-title">Dashboard</h1>
+                <div id="user-info">Admin</div>
+            </header>
+            <div id="content-area">
+                <!-- Dynamic Content Goes Here -->
+            </div>
+        </main>
+
+        <nav id="mobile-nav">
+            <a href="#" data-page="dashboard" class="active"><i data-lucide="layout-dashboard"></i></a>
+            <a href="#" data-page="pos"><i data-lucide="shopping-cart"></i></a>
+            <a href="#" data-page="items"><i data-lucide="package"></i></a>
+            <a href="#" data-page="reports"><i data-lucide="bar-chart-3"></i></a>
+        </nav>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
